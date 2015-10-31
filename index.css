@@ -26,8 +26,7 @@ p
 
 main p:first-letter
 {
-    font-size: 200%;
-    font-family: Dancing Script;
+    font: 2em Dancing Script, cursive;
 }
 
 h1
@@ -36,15 +35,14 @@ h1
     padding-top: 10px;
     padding-bottom: 30px;
     text-align: center;
-    font-family: Exo;
+    font-family: Exo, sans-serif;
     text-transform: uppercase;
 }
 
 h2
 {
     margin: 7px;
-    font-family: Yanone Kaffeesatz;
-    font-size: 130%;
+    font: 1.3em Yanone Kaffeesatz, sans-serif;
     text-align: center;
 }
 
@@ -68,16 +66,14 @@ header p
 .author
 {
     line-height: 20px;
-    font-family: Bree Serif;
+    font: 1.1em Bree Serif, serif;
     padding-top: 10px;
-    font-size: 110%;
     float: right;
 }
 
 .more p
 {
-    font-size: 110%;
-    font-family: Kaushan Script;
+    font: 1.1em Kaushan Script, cursive;
 }
 
 figure
@@ -87,15 +83,14 @@ figure
 
 figcaption
 {
-    font-size: 80%;
+    font-size: .8em;
     text-align: center;
 }
 
 blockquote
 {
     margin: 5px 30px;
-    font-size: 140%;
-    font-family: Bangers;
+    font: 1.4em Bangers, fantasy;
 }
 
 .notab
@@ -103,4 +98,9 @@ blockquote
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
+}
+
+.nopadding
+{
+    padding-top: 0;
 }
