@@ -40,6 +40,7 @@ h1
     text-align: center;
     font-family: Exo, sans-serif;
     text-transform: uppercase;
+    -webkit-column-span: all;
 }
 
 h2
@@ -108,34 +109,43 @@ blockquote
     padding-top: 0;
 }
 
-#lora:checked ~ main article div p
+#lora:checked ~ main article p
 {
     font-family: Lora, serif;
 }
 
-#slabo:checked ~ main article div p
+#slabo:checked ~ main article p
 {
     font-family: 'Slabo 27px';
 }
 
-#cover:checked ~ main article div p
+#cover:checked ~ main article p
 {
     font-family: Covered By Your Grace;
 }
 
-#fifteen:checked ~ main article div p
+#fifteen:checked ~ main article p,
+#fifteen:checked ~ main .author
 {
     font-size: 15px;
+    -webkit-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
 }
 
-#eighteen:checked ~ main article div p
+#eighteen:checked ~ main article p,
+#eighteen:checked ~ main .author
 {
     font-size: 18px;
+    -webkit-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
 }
 
-#twentyone:checked ~ main article div p
+#twentyone:checked ~ main article p,
+#twentyone:checked ~ main .author
 {
     font-size: 21px;
+    -webkit-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
 }
 
 .adding
@@ -153,4 +163,18 @@ blockquote
 {
     background: none;
     color: #000;
+}
+
+#white:checked ~ main .page
+{
+    -webkit-column-rule: 1px solid #fff;
+    -moz-column-rule: 1px solid #fff;
+    column-rule: 1px solid #fff;
+}
+
+#black:checked ~ main .page
+{
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
 }
