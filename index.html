@@ -5,21 +5,38 @@
         <title>DeLorean DMC-12</title>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css?family=Exo|Bree+Serif|
-        Yanone+Kaffeesatz|Dancing+Script|Kaushan+Script|Lora|Bangers"
+        Yanone+Kaffeesatz|Dancing+Script|Kaushan+Script|Lora|Bangers|Slabo+27px|Covered+By+Your+Grace"
         rel="stylesheet" type="text/css">
     </head>
     <body>
         <!-- Здесь применять вашу самую сильную магию -->
+        <p class="adding">Выберите шрифт:</p>
+        <input type="radio" name="choice" id="lora" checked>
+        <label for="lora">Lora</label><br>
+        <input type="radio" name="choice" id="slabo">
+        <label for="slabo">Slabo 27px</label><br>
+        <input type="radio" name="choice" id="cover">
+        <label for="cover">Covered By Your Grace</label><br>
+        <p class="adding">Выберите размер:</p>
+        <input type="radio" name="size" id="fifteen" checked>
+        <label for="fifteen">15</label><br>
+        <input type="radio" name="size" id="eighteen">
+        <label for="eighteen">18</label><br>
+        <input type="radio" name="size" id="twentyone">
+        <label for="twentyone">21</label>
+        <p class="adding">Выберите оформление:</p>
+        <input type="radio" name="color" id="black" checked>
+        <label for="black">Black on light</label><br>
+        <input type="radio" name="color" id="white">
+        <label for="white">White on dark</label><br>
         <header>
-            <p>
-                <img class="header" src="http://news.bbcimg.co.uk/img/1_0_3/cream/hi/news/news-blocks.gif" 
+            <img class="header" src="http://news.bbcimg.co.uk/img/1_0_3/cream/hi/news/news-blocks.gif" 
                 alt="BBC">
-            </p>
         </header>
         <main>
             <article>
                 <h1>&laquo;Tractor beam&raquo; grabs beads with sound waves</h1>
-                <div lang="en" class="page">
+                <div class="page">
                     <p class="nopadding">
                         En&shy;gi&shy;neers in Bristol have de&shy;ve&shy;loped a system that can grab, hold
                         and move small objects without touching them, using &laquo;holograms&raquo; made of 
@@ -155,12 +172,11 @@
                         <time>27 October 2015</time>
                     </address>
                 </div>
+                <p class="more">
+                    More on this story: <a href="http://www.bbc.com/news/science-environment-29708358">
+                    link</a>
+                </p>
             </article>
         </main>
-        <footer class="more">
-            <p>
-                More on this story: <a href="http://www.bbc.com/news/science-environment-29708358">link</a>
-            </p>
-        </footer>
     </body>
 </html>

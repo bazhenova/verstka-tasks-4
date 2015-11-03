@@ -1,6 +1,9 @@
 body
 {
-    background-image: url(http://365psd.ru/images/backgrounds/paper-1.jpg);
+    background-image: url(http://bgfons.com/upload/paper_texture331.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
 }
 
 .page
@@ -20,7 +23,7 @@ p
     margin: 0;
     padding: 10px;
     text-align: justify;
-    font-family: Lora, serif;
+    font: 15px Lora, serif;
     line-height: 22px;
 }
 
@@ -51,7 +54,7 @@ img
     width: 100%;
 }
 
-header p
+header
 {
     padding: 0;
     text-align: center;
@@ -66,12 +69,12 @@ header p
 .author
 {
     line-height: 20px;
-    font: 1.1em Bree Serif, serif;
+    font: 1.1em 'Bree Serif', serif;
     padding-top: 10px;
     float: right;
 }
 
-.more p
+.more
 {
     font: 1.1em Kaushan Script, cursive;
 }
@@ -103,4 +106,51 @@ blockquote
 .nopadding
 {
     padding-top: 0;
+}
+
+#lora:checked ~ main article div p
+{
+    font-family: Lora, serif;
+}
+
+#slabo:checked ~ main article div p
+{
+    font-family: 'Slabo 27px';
+}
+
+#cover:checked ~ main article div p
+{
+    font-family: Covered By Your Grace;
+}
+
+#fifteen:checked ~ main article div p
+{
+    font-size: 15px;
+}
+
+#eighteen:checked ~ main article div p
+{
+    font-size: 18px;
+}
+
+#twentyone:checked ~ main article div p
+{
+    font-size: 21px;
+}
+
+.adding
+{
+    font: 20px Dancing Script, cursive;
+}
+
+#white:checked ~ main
+{
+    background-image: url(http://elitefon.ru/images/201211/elitefon.ru_10450.jpg);
+    color: #fff;
+}
+
+#black:checked ~ main
+{
+    background: none;
+    color: #000;
 }
